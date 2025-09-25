@@ -1,0 +1,43 @@
+.card {
+  border-radius: 18px;
+  border: 1px solid rgba(9, 72, 80, 0.16);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  color: inherit;
+  box-shadow: 0 20px 45px -35px rgba(0, 32, 36, 0.85);
+  overflow: hidden;
+}
+
+.header {
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #083945;
+}
+
+.description {
+  margin: 0.35rem 0 0;
+  color: rgba(8, 57, 69, 0.65);
+  font-size: 0.95rem;
+}
+
+.content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+[data-theme='dark'] .card {
+  background: rgba(2, 30, 37, 0.78);
+  border-color: rgba(158, 243, 229, 0.12);
+}
+
+[data-theme='dark'] .title {
+  color: #e1fdf9;
+}
+
+[data-theme='dark'] .description {
+  color: rgba(223, 249, 245, 0.7);
+}

@@ -1,0 +1,84 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px -15px rgba(0, 0, 0, 0.8);
+}
+
+.button:focus-visible {
+  outline: 2px solid #9ef3e5;
+  outline-offset: 2px;
+}
+
+.buttonPrimary {
+  background: linear-gradient(135deg, #0a5d68, #0f7a89);
+  color: #f0f8f9;
+  border-color: rgba(237, 255, 255, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.buttonPrimary:hover {
+  background: linear-gradient(135deg, #0b6e7c, #11899a);
+}
+
+.buttonSecondary {
+  background: rgba(4, 68, 79, 0.08);
+  color: #0b3a44;
+  border-color: rgba(10, 62, 72, 0.3);
+}
+
+.buttonSecondary:hover {
+  background: rgba(4, 68, 79, 0.16);
+}
+
+.buttonGhost {
+  background: transparent;
+  color: #0e6c79;
+  border-color: transparent;
+}
+
+.buttonGhost:hover {
+  background: rgba(4, 68, 79, 0.12);
+}
+
+.buttonSm {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.buttonMd {
+  padding: 0.65rem 1.4rem;
+  font-size: 0.95rem;
+}
+
+.buttonLg {
+  padding: 0.9rem 1.8rem;
+  font-size: 1.05rem;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+[data-theme='dark'] .buttonSecondary {
+  color: #e6f7f5;
+  border-color: rgba(158, 243, 229, 0.2);
+  background: rgba(158, 243, 229, 0.12);
+}
+
+[data-theme='dark'] .buttonGhost {
+  color: #88d1c4;
+}

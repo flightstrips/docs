@@ -1,0 +1,31 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.badgeAccent {
+  background: rgba(60, 95, 89, 0.774);
+  color: #9ef3e5;
+  border-color: rgba(158, 243, 229, 0.35);
+}
+
+.badgeOutline {
+  background: rgba(3, 60, 69, 0.35);
+  color: #d4fdf5;
+  border-color: rgba(158, 243, 229, 0.5);
+}
+
+[data-theme='light'] .badgeOutline {
+  background: rgba(8, 98, 111, 0.08);
+  color: #0a525d;
+  border-color: rgba(8, 98, 111, 0.25);
+}
