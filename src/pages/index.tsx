@@ -51,7 +51,7 @@ function HeroSection() {
             <Button to="/docs/intro" size="lg">
               Explore the docs
             </Button>
-            <Button to="/docs/changelog" variant="secondary" size="lg">
+            <Button to="/blog" variant="secondary" size="lg">
               Request early access
             </Button>
           </div>
@@ -100,7 +100,7 @@ function CallToAction() {
         </div>
         <div className={styles.ctaActions}>
           <Button to="/docs/intro">Get started</Button>
-          <Button to="/docs/support" variant="ghost">
+          <Button to="/docs/intro" variant="ghost">
             Talk to the team
           </Button>
         </div>
